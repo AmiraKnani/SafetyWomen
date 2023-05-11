@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1A5CC">
+
+    <ImageView
+        android:id="@+id/user_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/notification" />
+
+    <ImageButton
+        android:id="@+id/menu_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/list"
+        android:onClick="showPopupMenu"
+        android:contentDescription="@string/menu_button_description" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="-392dp"
+        app:layout_constraintBottom_toTopOf="@id/choices_layout"
+        app:layout_constraintTop_toBottomOf="@+id/menu_button"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/powerful" />
+
+    <LinearLayout
+        android:id="@+id/choices_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical">
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="330dp" />
+
+    <Button
+        android:id="@+id/button_alert_suspicious_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="15dp"
+        android:text="Alert a Suspicious Place"
+        android:textColor="#FFFFFF"
+        android:drawableLeft="@drawable/whitealert"
+        android:drawableRight="@drawable/whitedirection"
+        android:drawablePadding="8dp" />
+    />
+
+
+
+    <Button
+        android:id="@+id/button_request_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_alert_suspicious_place"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="15dp"
+        android:text="Request for Help"
+        android:textColor="#FFFFFF"
+        android:drawableLeft="@drawable/whitesafe"
+        android:drawableRight="@drawable/whitedirection"
+        android:drawablePadding="8dp" />
+    />
+
+    <Button
+        android:id="@+id/button_get_to_know_suspicious_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_request_help"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="15dp"
+        android:text="Get to Know Suspicious Place"
+        android:textColor="#FFFFFF"
+        android:drawableLeft="@drawable/whitenoifi"
+        android:drawableRight="@drawable/whitedirection"
+        android:drawablePadding="8dp" />
+
+
+    <TextView
+
+        android:id="@+id/textViewNoAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="650dp"
+        android:text="® 2023 Amira Knani"
+        android:textAlignment="center"
+        android:textColor="#009688"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="680dp"
+
+
+        android:text="All rights reserved "
+        android:textAlignment="center"
+        android:textColor="#594C5E"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

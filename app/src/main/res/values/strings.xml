@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SafeWomen</string>
+    <string name="menu_button_description">Menu button with options for Settings, FAQ, and Log out</string>
+    <string name="title_activity_maps">Maps</string>
+</resources>
