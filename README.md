@@ -16,7 +16,7 @@ Safety Woman is an Android application developed to empower women and provide en
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/safety-woman.git`
+1. Clone the repository: `git clone https://github.com/AmiraKnani/SafetyWomen.git`
 2. Open the project in Android Studio.
 3. Configure Firebase: Follow the instructions provided by Firebase to set up your project and add the necessary configuration files.
 4. Build and run the app on an Android device or emulator.
